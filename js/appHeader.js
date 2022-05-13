@@ -30,6 +30,7 @@ export const createHeader = (city) => {
   unitsF.classList.add('units__f', 'btn-reset');
   searchBlock.classList.add('search', 'fade-in');
   searchInput.classList.add('search_input');
+  searchInput.setAttribute('maxlength', 30);
   searchBtn.classList.add('search_btn');
   errorBlock.classList.add('search__error');
 
@@ -67,7 +68,7 @@ export const createHeader = (city) => {
 
   const showError = (message) => {
     errorBlock.classList.add('show-error');
-    errorBlock.textContent = message;
+    errorBlock.textContent = 'Город не найден';
   };
 
   document.addEventListener('keydown', (e) => {
