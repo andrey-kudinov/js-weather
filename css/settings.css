@@ -15,8 +15,17 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
+  padding: 5rem 0;
   background-color: var(--cornflower-blue);
+}
+
+main {
+  margin: auto 0;
+  padding: 3rem 0;
 }
 
 *,
