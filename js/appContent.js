@@ -17,7 +17,7 @@ export const createContent = (data) => {
   const weatherInfoClouds = document.createElement('li');
 
   section.classList.add('weather');
-  container.classList.add('container', 'weather__container');
+  container.classList.add('weather__container');
   inner.classList.add('weather__inner');
   iconBloc.classList.add('weather__icon');
   temperature.classList.add('weather__temperature');

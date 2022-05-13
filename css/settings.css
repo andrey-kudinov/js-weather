@@ -18,9 +18,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;
-  padding: 5rem 0;
+  margin: 0 auto;
+  padding: 4rem 2rem;
   background-color: var(--cornflower-blue);
+  max-width: 1200px;
 }
 
 main {
@@ -37,12 +38,6 @@ main {
 :root {
   --color-white: #ffffff;
   --cornflower-blue: #6195ed;
-}
-
-.container {
-  max-width: 1226px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .btn-reset {

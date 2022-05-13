@@ -19,7 +19,7 @@ export const createHeader = (city) => {
   const errorBlock = document.createElement('p');
 
   header.classList.add('header');
-  headerContainer.classList.add('container', 'header__container');
+  headerContainer.classList.add('header__container');
   headerCity.classList.add('header__city');
   headerUnits.classList.add('header__units');
   cityChange.classList.add('city__change', 'btn-reset');
