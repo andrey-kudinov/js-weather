@@ -44,10 +44,8 @@ export const createHeader = (city) => {
     headerCity.innerHTML = '';
     searchBlock.classList.remove('fade-out');
     searchBlock.append(searchInput, searchBtn, errorBlock);
-    setTimeout(() => {
-      searchInput.focus();
-    });
     headerCity.append(searchBlock);
+    searchInput.focus();
   });
 
   searchBtn.addEventListener('click', async () => {
@@ -83,9 +81,8 @@ export const createHeader = (city) => {
       e.target === cityChange
     )
       return;
-    else {
-      closeInput();
-    }
+
+    closeInput();
   });
 
   document.addEventListener('keydown', (e) => {
