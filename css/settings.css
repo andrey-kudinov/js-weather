@@ -1,0 +1,47 @@
+/* fonts */
+@font-face {
+  font-family: 'Lato';
+  src: local('LatoRegular'), local('Lato-Regular'),
+    url('../fonts/Lato-Regular.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+/* common specification */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  background-color: var(--cornflower-blue);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-white: #ffffff;
+  --cornflower-blue: #6195ed;
+}
+
+.container {
+  max-width: 1226px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn-reset {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  opacity: 0.6;
+  background-color: transparent;
+  color: var(--color-white);
+}

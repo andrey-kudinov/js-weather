@@ -1,0 +1,81 @@
+.weather {
+  padding-top: 178px;
+}
+
+.weather__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather__temperature {
+  margin: 0;
+  font-size: 180px;
+  color: var(--color-white);
+}
+
+.weather__units {
+  position: absolute;
+  top: 13px;
+  right: -40px;
+  font-size: 65px;
+  color: var(--color-white);
+}
+
+.weather__icon {
+  width: 138px;
+  height: 138px;
+}
+
+.weather__description {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.weather-info {
+  padding-top: 218px;
+  padding-bottom: 122px;
+  align-self: normal;
+}
+
+.weather-info__list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-info__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.weather-info__item span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-white);
+  opacity: 0.6;
+}
+
+.weather-info__item p {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--color-white);
+}
