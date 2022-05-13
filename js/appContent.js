@@ -17,14 +17,14 @@ export const createContent = (data) => {
   const weatherInfoClouds = document.createElement('li');
 
   section.classList.add('weather');
-  container.classList.add('container', 'weather__container');
+  container.classList.add('weather__container');
   inner.classList.add('weather__inner');
   iconBloc.classList.add('weather__icon');
   temperature.classList.add('weather__temperature');
   units.classList.add('weather__units');
   description.classList.add('weather__description');
   weatherInfo.classList.add('weather-info');
-  weatherInfoList.classList.add('weather-info__list');
+  weatherInfoList.classList.add('weather-info__list', 'container');
   weatherInfoWind.classList.add('weather-info__item');
   weatherInfoHumidity.classList.add('weather-info__item');
   weatherInfoPressure.classList.add('weather-info__item');
@@ -71,9 +71,10 @@ export const createContent = (data) => {
     createWeatherContent(`${data.clouds.all}%`),
   );
 
+  document.body.append(weatherInfo);
   main.append(section);
   section.append(container);
-  container.append(inner, description, weatherInfo);
+  container.append(inner, description);
   inner.append(iconBloc, temperature, units);
   weatherInfo.append(weatherInfoList);
   weatherInfoList.append(

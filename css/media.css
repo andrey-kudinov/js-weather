@@ -1,6 +1,10 @@
 @media all and (max-width: 750px) {
+  body {
+    padding: 2rem 0;
+  }
+
   .search_input {
-    width: 280px;
+    width: 250px;
   }
 
   .weather-info__list {
@@ -10,11 +14,6 @@
 
   .weather-info__item:not(:last-child) {
     margin-bottom: 25px;
-  }
-
-  .weather-info {
-    padding-top: 100px;
-    padding-bottom: 20px;
   }
 }
 
@@ -30,10 +29,6 @@
 
   .header__city {
     margin-bottom: 30px;
-  }
-
-  .weather {
-    padding-top: 60px;
   }
 
   .weather__temperature {
