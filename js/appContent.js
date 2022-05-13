@@ -24,7 +24,7 @@ export const createContent = (data) => {
   units.classList.add('weather__units');
   description.classList.add('weather__description');
   weatherInfo.classList.add('weather-info');
-  weatherInfoList.classList.add('weather-info__list');
+  weatherInfoList.classList.add('weather-info__list', 'container');
   weatherInfoWind.classList.add('weather-info__item');
   weatherInfoHumidity.classList.add('weather-info__item');
   weatherInfoPressure.classList.add('weather-info__item');
@@ -70,8 +70,8 @@ export const createContent = (data) => {
     createWeatherTitle('Облачность'),
     createWeatherContent(`${data.clouds.all}%`),
   );
-  
-  document.body.append(weatherInfo)
+
+  document.body.append(weatherInfo);
   main.append(section);
   section.append(container);
   container.append(inner, description);

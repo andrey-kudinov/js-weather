@@ -1,6 +1,10 @@
 @media all and (max-width: 750px) {
+  body {
+    padding: 2rem 0;
+  }
+
   .search_input {
-    width: 280px;
+    width: 250px;
   }
 
   .weather-info__list {

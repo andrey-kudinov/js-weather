@@ -48,8 +48,8 @@
 }
 
 .weather-info__list {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 15px;
   width: 100%;
   list-style-type: none;
   display: flex;
