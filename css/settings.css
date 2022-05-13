@@ -19,14 +19,14 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 2rem;
   background-color: var(--cornflower-blue);
   max-width: 1200px;
 }
 
 main {
   margin: auto 0;
-  padding: 3rem 0;
+  padding-bottom: 4rem;
 }
 
 *,

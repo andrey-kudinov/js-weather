@@ -1,8 +1,4 @@
 @media all and (max-width: 750px) {
-  body {
-    padding: 2rem;
-  }
-
   .search_input {
     width: 280px;
   }
