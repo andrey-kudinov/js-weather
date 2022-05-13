@@ -70,10 +70,11 @@ export const createContent = (data) => {
     createWeatherTitle('Облачность'),
     createWeatherContent(`${data.clouds.all}%`),
   );
-
+  
+  document.body.append(weatherInfo)
   main.append(section);
   section.append(container);
-  container.append(inner, description, weatherInfo);
+  container.append(inner, description);
   inner.append(iconBloc, temperature, units);
   weatherInfo.append(weatherInfoList);
   weatherInfoList.append(
