@@ -1,7 +1,3 @@
-.header {
-  padding-top: 50px;
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;

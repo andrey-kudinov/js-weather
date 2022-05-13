@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-.weather {
-  padding-top: 100px;
-}
-
 .weather__container {
   display: flex;
   flex-direction: column;
@@ -47,8 +43,6 @@
 }
 
 .weather-info {
-  padding-top: 150px;
-  padding-bottom: 20px;
   align-self: normal;
 }
 
